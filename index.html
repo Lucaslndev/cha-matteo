@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chá do Matteo — Confirmação de Presença</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="floaters" id="floaters"></div>
+
+  <div class="page">
+    <div class="eyebrow">CHÁ DO</div>
+    <h1 class="hero-name display"><span id="nomeBebeLabel">Matteo</span></h1>
+    <div class="ribbon">Confirmação de presença</div>
+
+    <div class="card">
+      <p>O <span id="nomeBebeLabel2">Matteo</span> está chegando! 💚</p>
+      <p>Mamãe e papai estão preparando tudo com muito carinho. Ficaremos muito felizes em compartilhar esse momento
+        tão especial com você!</p>
+      <p>Para nos ajudar na organização do chá, pedimos, por favor, que confirme sua presença.</p>
+    </div>
+
+    <form class="card" id="rsvpForm">
+      <label class="field-label"><span class="num">💚</span> 1. Nome:</label>
+      <input type="text" id="nome" placeholder="Seu nome" autocomplete="name" required>
+      <div class="error-msg" id="errNome">Por favor, preencha seu nome.</div>
+
+      <div style="height:18px;"></div>
+      <label class="field-label"><span class="num">💚</span> 2. Você poderá participar do chá do<span
+          id="nomeBebeLabel3">Matteo</span>?</label>
+      <div class="choice-row" id="choiceRow">
+        <div class="choice yes" data-val="true">
+          <strong>✔️ Sim,</strong><span>estarei presente!</span>
+        </div>
+        <div class="choice no" data-val="false">
+          <strong>✖️ Não,</strong><span>infelizmente não poderei comparecer.</span>
+        </div>
+      </div>
+      <div class="error-msg" id="errChoice">Selecione uma opção.</div>
+
+      <div style="height:18px;"></div>
+      <label class="field-label"><span class="num">💚</span> 3. Alguma observação? <span
+          style="font-weight:400;color:var(--brown-soft);font-size:12.5px;">(opcional)</span></label>
+      <textarea id="obs" placeholder="Ex: levo um presente, tenho restrição alimentar..."></textarea>
+
+      <div style="height:22px;"></div>
+      <button type="submit" class="btn">Confirmar presença</button>
+    </form>
+
+    <div class="footer-note">
+      Obrigada pelo carinho e por fazer parte desse momento tão especial para nossa família!<br>
+      <em>Com carinho, Mamãe, Papai e Matteo</em>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
