@@ -10,7 +10,7 @@ const EVENTO = {
   endereco: "R Tânia, N°180 jardim Margarida, Mogi das Cruzes",
   mapsQuery: "R Tânia, N°180 jardim Margarida, Mogi das Cruzes",
 };
-const ADMIN_CODE = "matteo2026"; // troque este código antes de compartilhar o link do admin
+const ADMIN_CODE = "matteo"; // troque este código antes de compartilhar o link do admin
 
 /* ================= FIREBASE ================= */
 const app = initializeApp(firebaseConfig);
