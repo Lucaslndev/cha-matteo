@@ -54,7 +54,7 @@ function renderFloaters(){
 function initForm(){
   document.getElementById('nomeBebeLabel').textContent = EVENTO.nomeBebe;
   document.getElementById('nomeBebeLabel2').textContent = EVENTO.nomeBebe;
-  document.getElementById('nomeBebeLabel3').textContent = EVENTO.nomeBebe;
+  //document.getElementById('nomeBebeLabel3').textContent = EVENTO.nomeBebe;
 
   let selected = null;
   const choices = document.querySelectorAll('.choice');
